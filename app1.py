@@ -7,6 +7,7 @@ from PIL import Image
 
 st.title("Dartrix podrá leer cualquier texto que le muestres")
 image = Image.open('Dartrix.png')
+st.image(image, width=350)
 
 img_file_buffer = st.camera_input("Toma una foto del texto")
 
