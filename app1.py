@@ -29,20 +29,7 @@ if img_file_buffer is not None:
     img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
     text=pytesseract.image_to_string(img_rgb)
     st.write(text) 
-    
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://i.pinimg.com/736x/31/52/b1/3152b151b84a7016d0d150b5780944eb.jpg")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://i.pinimg.com/736x/31/52/b1/3152b151b84a7016d0d150b5780944eb.jpg")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
     
 
